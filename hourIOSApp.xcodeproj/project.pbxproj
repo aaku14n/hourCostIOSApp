@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		22632C9525286FFB00983F07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22632C9425286FFB00983F07 /* AppDelegate.swift */; };
 		22632C9725286FFB00983F07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22632C9625286FFB00983F07 /* SceneDelegate.swift */; };
-		22632C9925286FFB00983F07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22632C9825286FFB00983F07 /* ViewController.swift */; };
 		22632C9C25286FFB00983F07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22632C9A25286FFB00983F07 /* Main.storyboard */; };
 		22632C9E25286FFD00983F07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22632C9D25286FFD00983F07 /* Assets.xcassets */; };
 		22632CA125286FFD00983F07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22632C9F25286FFD00983F07 /* LaunchScreen.storyboard */; };
 		22632CAC25286FFD00983F07 /* hourIOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22632CAB25286FFD00983F07 /* hourIOSAppTests.swift */; };
 		22632CB725286FFD00983F07 /* hourIOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22632CB625286FFD00983F07 /* hourIOSAppUITests.swift */; };
+		22632CD42528731B00983F07 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22632CD32528731B00983F07 /* MainVC.swift */; };
+		22632CDA252879F600983F07 /* CurrencyInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22632CD9252879F600983F07 /* CurrencyInput.swift */; };
+		22AD2A4625289008000AF558 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD2A4525289008000AF558 /* Wage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 		22632C9125286FFB00983F07 /* hourIOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hourIOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22632C9425286FFB00983F07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22632C9625286FFB00983F07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		22632C9825286FFB00983F07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		22632C9B25286FFB00983F07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22632C9D25286FFD00983F07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22632CA025286FFD00983F07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		22632CB225286FFD00983F07 /* hourIOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hourIOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22632CB625286FFD00983F07 /* hourIOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hourIOSAppUITests.swift; sourceTree = "<group>"; };
 		22632CB825286FFD00983F07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22632CD32528731B00983F07 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		22632CD9252879F600983F07 /* CurrencyInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyInput.swift; sourceTree = "<group>"; };
+		22AD2A4525289008000AF558 /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		22632C9325286FFB00983F07 /* hourIOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				22AD2A4425288FF5000AF558 /* Models */,
+				22632CD8252879B200983F07 /* Views */,
+				22632CC7252871DC00983F07 /* Controller */,
 				22632C9425286FFB00983F07 /* AppDelegate.swift */,
 				22632C9625286FFB00983F07 /* SceneDelegate.swift */,
-				22632C9825286FFB00983F07 /* ViewController.swift */,
 				22632C9A25286FFB00983F07 /* Main.storyboard */,
 				22632C9D25286FFD00983F07 /* Assets.xcassets */,
 				22632C9F25286FFD00983F07 /* LaunchScreen.storyboard */,
@@ -126,6 +132,30 @@
 				22632CB825286FFD00983F07 /* Info.plist */,
 			);
 			path = hourIOSAppUITests;
+			sourceTree = "<group>";
+		};
+		22632CC7252871DC00983F07 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22632CD32528731B00983F07 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22632CD8252879B200983F07 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22632CD9252879F600983F07 /* CurrencyInput.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		22AD2A4425288FF5000AF558 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22AD2A4525289008000AF558 /* Wage.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22632C9925286FFB00983F07 /* ViewController.swift in Sources */,
 				22632C9525286FFB00983F07 /* AppDelegate.swift in Sources */,
+				22632CDA252879F600983F07 /* CurrencyInput.swift in Sources */,
+				22AD2A4625289008000AF558 /* Wage.swift in Sources */,
+				22632CD42528731B00983F07 /* MainVC.swift in Sources */,
 				22632C9725286FFB00983F07 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
